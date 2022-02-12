@@ -18,23 +18,35 @@
         <h1>Ionic Basico - Practica 2</h1>
         <ion-grid>
             <ion-row> <!--Fila 1-->
-             <ion-col>
-                 Fila 1 Columna 1
+             <ion-col size="2">
+                 <ion-label>Descripcion:</ion-label>
              </ion-col>
                <ion-col>
-                  Fila 1 Columna 2
+                  <ion-input placeholder="Ejemplo: Chilaquiles habaneros" id="descripcion"></ion-input>
                </ion-col>
             </ion-row>
 
-            <ion-row>
-                <ion-col>
-                    Fila 2 Columna 1
+            <ion-row> <!--Fila 2-->
+                <ion-col size="2">
+                    <ion-label>Monto:</ion-label>
                 </ion-col>
                 <ion-col>
-                    Fila 2 Columna 2
+                    <ion-input placeholder="Ejemplo: $80" id="monto"></ion-input>
                 </ion-col>
             </ion-row>
+
+            <ion-row> <!--Fila 3-->
+                <ion-col>
+                    <ion-button onclick="calcularTotal()">Calcular Monto</ion-button>
+                </ion-col>
+            </ion-row>
+
+            
+            <p id="totalMsg">
+                Total:
+            </p>
         </ion-grid>
     </ion-app>
 </body>
+<script src="index.js"></script>
 </html>
